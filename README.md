@@ -10,6 +10,8 @@ Install using Vim-Plug:
 Plug 'gera2ld/go-to-js'
 ```
 
+Go to file under cursor with `gf` or `<LocalLeader>e`.
+
 ## Features
 
 Suppose we have a project with structure below:
