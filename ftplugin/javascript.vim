@@ -19,7 +19,12 @@ if !exists('*s:GotoJavaScriptFile')
         return
       endif
     endfor
-    echom 'File not found'
+
+    if exists(':FZF')
+      exec 'FZF -q ' . cfile
+    else
+      echo 'File not found'
+    endif
   endf
 en
 
