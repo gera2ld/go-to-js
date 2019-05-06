@@ -28,5 +28,4 @@ if !exists('*s:GotoJavaScriptFile')
   endf
 en
 
-nmap <buffer> <LocalLeader>e :call <SID>GotoJavaScriptFile()<CR>
 nmap <buffer> gf :call <SID>GotoJavaScriptFile()<CR>
