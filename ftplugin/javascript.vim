@@ -20,10 +20,10 @@ if !exists('*s:GotoJavaScriptFile')
       endif
     endfor
 
-    if exists(':FZF')
-      exec 'FZF -q ' . cfile
+    if exists('*SearchFile')
+      call SearchFile(cfile)
     else
-      echo 'File not found'
+      echo 'File not found: ' . cfile
     endif
   endf
 en
